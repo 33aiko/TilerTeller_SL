@@ -9,6 +9,9 @@ public class PuzzleManager : MonoBehaviour {
 
 	[SerializeField]private int  puzzleSovled;
 
+	private int[] pinValue = new int[4];
+	private int[] pinValue2 = new int[4];
+
 	// Use this for initialization
 	void Start () {
  		
@@ -17,6 +20,12 @@ public class PuzzleManager : MonoBehaviour {
 		arduino.Setup (ConfigurePins);
 		arduino2.Setup (ConfigurePinsTwo);
 		puzzleSovled = 0;
+
+		for (int i = 0; i < 4; i++) {
+			pinValue [i] = 1000;
+			pinValue2 [i] = 1000;
+		}
+
 	}
 
 	void ConfigurePinsTwo(){
@@ -46,28 +55,21 @@ public class PuzzleManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		for (int i = 0; i < 4; i++) {
+			pinValue [i] = arduino.analogRead (i);
+			pinValue2 [i] = arduino2.analogRead (i);
+		}
 
+		Debug.Log ("0:" + pinValue[0] + " 1:" + pinValue[1] + " 2:" + pinValue[2] + " 3:" + pinValue[3]);
 
-		int pinValue0 = arduino.analogRead (0);
-		int pinValue1 = arduino.analogRead (1);
-		int pinValue2 = arduino.analogRead (2);
-		int pinValue3 = arduino.analogRead (3);
-
-		int pinValue4 = arduino2.analogRead (0);
-		int pinValue5 = arduino2.analogRead (1);
-		int pinValue6 = arduino2.analogRead (2);
-		int pinValue7 = arduino2.analogRead (3);
-
-		Debug.Log ("0:" + pinValue0 + " 1:" + pinValue1 + " 2:" + pinValue2 + " 3:" + pinValue3);
-
-		Debug.Log ("4:" + pinValue4 + " 5:" + pinValue5 + " 6:" + pinValue6 + " 7:" + pinValue7);
+		Debug.Log ("4:" + pinValue2[0] + " 5:" + pinValue2[1] + " 6:" + pinValue2[2] + " 7:" + pinValue2[3]);
 
 		Debug.Log (puzzleSovled);
 
-		if (pinValue0 < 10 && pinValue1 < 10 && pinValue2 < 10 && pinValue3 < 10) {
+		if (pinValue[0] < 10 && pinValue[1] < 10 && pinValue[2] < 10 && pinValue[3] < 10) {
 //			arduino.digitalWrite(13,Arduino.HIGH);
 			puzzleSovled = 1;
-		} else if (pinValue4 < 10 && pinValue5 < 10 && pinValue6 < 10 && pinValue7 < 10) {
+	} else if (pinValue2[0] < 10 && pinValue2[1] < 10 && pinValue2[2] < 10 && pinValue2[3] < 10) {
 			puzzleSovled = 2;
 		}
 		else{
