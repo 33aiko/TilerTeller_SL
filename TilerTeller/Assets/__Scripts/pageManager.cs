@@ -68,7 +68,7 @@ public class pageManager : MonoBehaviour {
 		}
 
 		for (int i = 0; i < pageNum; i++) {
-			if (i == currentPage && pages [i] != null) {
+			if (i == currentPage && pages [i] != null && isWaiting != true) {
 				pages [i].SetActive (true);
 				if (pages [i].GetComponent<AudioSource> () != null && pages [i].GetComponent<AudioSource> ().isPlaying != true) {
 					pages [i].GetComponent<AudioSource> ().Play ();}
