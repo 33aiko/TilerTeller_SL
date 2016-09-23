@@ -44,14 +44,14 @@ public class pageManager : MonoBehaviour {
 		nextBtn.SetActive (true);
 		int puzzleNum = puzzle.getPuzzleNum ();
 		if (isWaiting) {
-			if (puzzleNum != lastPuzzleNum) {
-				if (puzzleNum == 2) {
+//			if (puzzleNum != lastPuzzleNum) {
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 					pageRead [pageCount] = 1;
 					currentPage = 1;
 					hideHintPage ();
 					isWaiting = false;
 					lastPuzzleNum = puzzleNum;
-				} else if (puzzleNum == 1) {
+			} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
 					pageRead [pageCount] = 2;
 					currentPage = 2;
 					hideHintPage ();
@@ -64,7 +64,7 @@ public class pageManager : MonoBehaviour {
 					isWaiting = false;
 					lastPuzzleNum = puzzleNum;
 				}
-			}
+//			}
 		}
 
 		for (int i = 0; i < pageNum; i++) {
