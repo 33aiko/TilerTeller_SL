@@ -318,7 +318,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.23299299, w: 0.97247845}
   m_LocalPosition: {x: 4.9260693, y: -2.606729, z: -2}
   m_LocalScale: {x: 0.78, y: 0.78, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -15.9817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.3451}
   m_Children: []
   m_Father: {fileID: 1531097936}
   m_RootOrder: 1
@@ -539,9 +539,9 @@ Transform:
   - {fileID: 649029974}
   - {fileID: 594158779}
   - {fileID: 827659755}
-  - {fileID: 892298594}
-  - {fileID: 1222444643}
   - {fileID: 1735451112}
+  - {fileID: 1222444643}
+  - {fileID: 892298594}
   m_Father: {fileID: 1002952632}
   m_RootOrder: 0
 --- !u!212 &75139004
@@ -577,41 +577,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &93517662
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 93517663}
-  m_Layer: 5
-  m_Name: hintPage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &93517663
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 93517662}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 967384283}
-  - {fileID: 341142723}
-  m_Father: {fileID: 1148260907}
-  m_RootOrder: 2
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &102173344
 GameObject:
   m_ObjectHideFlags: 0
@@ -1674,7 +1639,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'No matter extreme hot or cold, Round is never too anxious about the yard.
+  m_Text: 'Choose a tile and solve the puzzle to help Round open the door and explore
+    a new place with him!
 
 '
 --- !u!222 &265155639
@@ -2099,80 +2065,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!1 &341142722
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 341142723}
-  - 222: {fileID: 341142725}
-  - 114: {fileID: 341142724}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &341142723
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 341142722}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 93517663}
-  m_RootOrder: 1
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &341142724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 341142722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 4
-    m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
-  m_Text: Now choose a tile and finish the puzzle to create your story...
---- !u!222 &341142725
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 341142722}
 --- !u!1 &346874466
 GameObject:
   m_ObjectHideFlags: 0
@@ -5196,7 +5088,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 75139003}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!114 &892298595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5492,73 +5384,6 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
---- !u!1 &967384282
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 967384283}
-  - 222: {fileID: 967384285}
-  - 114: {fileID: 967384284}
-  m_Layer: 5
-  m_Name: RawImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &967384283
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 967384282}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8.924889, y: 6.2630773, z: 6.2630773}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 93517663}
-  m_RootOrder: 0
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &967384284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 967384282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -98529514, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.76}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &967384285
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 967384282}
 --- !u!1 &987020945
 GameObject:
   m_ObjectHideFlags: 0
@@ -5746,9 +5571,9 @@ MonoBehaviour:
   - {fileID: 1690225278}
   - {fileID: 598404268}
   - {fileID: 747941981}
-  - {fileID: 892298596}
-  - {fileID: 1222444645}
   - {fileID: 1735451114}
+  - {fileID: 1222444645}
+  - {fileID: 892298596}
   _FFDControls: []
   ControlsVisiblity: 1
   BonesVisiblity: 1
@@ -6138,9 +5963,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Sometimes, the yard leads her to Australia, and then the branches of eucalyptus
-    trees will extend over the yard. And Round will reach out his arm, to greet a
-    koala.
+  m_Text: 'Sometimes, the yard leads Round to Australia, and then the branches of
+    eucalyptus trees will extend over the yard. And he will reach out his arm, to
+    greet a koala.
 
 '
 --- !u!222 &1055987358
@@ -6642,7 +6467,6 @@ RectTransform:
   m_Children:
   - {fileID: 1555845857}
   - {fileID: 1208789938}
-  - {fileID: 93517663}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 0}
@@ -6940,7 +6764,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1169490690
 Transform:
   m_ObjectHideFlags: 0
@@ -7545,7 +7369,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: 0.0023160428, w: 0.9999973}
   m_LocalPosition: {x: 4.8460693, y: -4.876729, z: -2}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 48.5984}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 49.32889}
   m_Children: []
   m_Father: {fileID: 1531097936}
   m_RootOrder: 6
@@ -8641,8 +8465,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1509087967}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.49, y: 0.69, z: -1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.08, y: -0.55, z: -1}
+  m_LocalScale: {x: 0.78, y: 0.78, z: 0.78}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 1169490690}
@@ -8696,7 +8520,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1523662646
 Transform:
   m_ObjectHideFlags: 0
@@ -9444,7 +9268,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
   m_Text: Once, the yard arrived at the Antarctica, and that time Round was out of
-    his wits.  could only tightly close the door, and waited.
+    his wits. He could only tightly close the door, and waited.
 --- !u!222 &1570933510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9483,7 +9307,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 269, y: 78}
+  m_AnchoredPosition: {x: 269, y: 84}
   m_SizeDelta: {x: 420, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576592747
@@ -9518,11 +9342,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
-  m_Text: 'Sometimes, the yard arrives at the Sahara desert. Round will hurry to put
-    a white curtain over the yard to shield from the sun and water the plants again
-    and again.
-
-'
+  m_Text: "Sometimes, the yard arrives at the Sahara desert. Round will hurry to put
+    a white curtain over the yard to shield it from the sun. \nHe will take a can
+    from his house and water the plants again and again.\n"
 --- !u!222 &1576592748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9615,7 +9437,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0.003310074, w: 0.9999946}
   m_LocalPosition: {x: 8.805997, y: -0.5165837, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.021}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 4.6830997}
   m_Children:
   - {fileID: 20305376}
   - {fileID: 167980903}
@@ -10487,8 +10309,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1.2
   m_Text: "Round Eggy has a small yard. In Round\u2019s yard there is a fig tree.
-    Centered at this tree, the yard is like a little planet, slowly making rotation.
-    Everytime goes out of the yard\u2019s front door, Round will always end up somewhere
+    Centered at this tree, the yard is like a little planet, slowly rotating by itself.
+    Everytime goes out of the yard\u2019s front door, Round will end up somewhere
     strange. "
 --- !u!222 &1731125049
 CanvasRenderer:
@@ -10525,7 +10347,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 75139003}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!114 &1735451113
 MonoBehaviour:
   m_ObjectHideFlags: 0
