@@ -8,6 +8,7 @@ public class pageManager : MonoBehaviour {
 	public GameObject[] pages;
 	public GameObject hintPage;
 	public PuzzleManager puzzle;
+	public AudioSource door;
 
 	private int pageNum;
 	private int pageCount;
@@ -44,27 +45,48 @@ public class pageManager : MonoBehaviour {
 		nextBtn.SetActive (true);
 		int puzzleNum = puzzle.getPuzzleNum ();
 		if (isWaiting) {
-//			if (puzzleNum != lastPuzzleNum) {
-			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			if (puzzleNum != lastPuzzleNum) {
+				if (puzzleNum == 2) {
 					pageRead [pageCount] = 1;
 					currentPage = 1;
 					hideHintPage ();
 					isWaiting = false;
 					lastPuzzleNum = puzzleNum;
-			} else if (Input.GetKeyDown (KeyCode.Alpha2)) {
+//					door.Play ();
+				} else if (puzzleNum == 1) {
 					pageRead [pageCount] = 2;
 					currentPage = 2;
 					hideHintPage ();
 					isWaiting = false;
 					lastPuzzleNum = puzzleNum;
-				} else if (Input.GetKeyDown (KeyCode.Alpha3)) {
-					pageRead [pageCount] = 3;
-					currentPage = 3;
-					hideHintPage ();
-					isWaiting = false;
-					lastPuzzleNum = puzzleNum;
-				}
-//			}
+//					door.Play ();
+				} 
+			}
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				pageRead [pageCount] = 1;
+				currentPage = 1;
+				hideHintPage ();
+				isWaiting = false;
+				lastPuzzleNum = puzzleNum;
+				//					door.Play ();
+			} 
+
+			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				pageRead [pageCount] = 2;
+				currentPage = 2;
+				hideHintPage ();
+				isWaiting = false;
+				lastPuzzleNum = puzzleNum;
+				//					door.Play ();
+			} 
+			 if (Input.GetKeyDown (KeyCode.Alpha3)) {
+				pageRead [pageCount] = 3;
+				currentPage = 3;
+				hideHintPage ();
+				isWaiting = false;
+				lastPuzzleNum = puzzleNum;
+//				door.Play ();
+			}
 		}
 
 		for (int i = 0; i < pageNum; i++) {

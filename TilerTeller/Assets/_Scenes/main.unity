@@ -539,9 +539,9 @@ Transform:
   - {fileID: 649029974}
   - {fileID: 594158779}
   - {fileID: 827659755}
-  - {fileID: 1735451112}
-  - {fileID: 1222444643}
   - {fileID: 892298594}
+  - {fileID: 1222444643}
+  - {fileID: 1735451112}
   m_Father: {fileID: 1002952632}
   m_RootOrder: 0
 --- !u!212 &75139004
@@ -1627,7 +1627,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -1638,7 +1638,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: 'Choose a tile and solve the puzzle to help Round open the door and explore
     a new place with him!
 
@@ -3458,7 +3458,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3469,7 +3469,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: Round knows that the plants and flowers will die, but also will be alive
     again.
 --- !u!222 &534631476
@@ -5088,7 +5088,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 75139003}
-  m_RootOrder: 5
+  m_RootOrder: 3
 --- !u!114 &892298595
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5571,9 +5571,9 @@ MonoBehaviour:
   - {fileID: 1690225278}
   - {fileID: 598404268}
   - {fileID: 747941981}
-  - {fileID: 1735451114}
-  - {fileID: 1222444645}
   - {fileID: 892298596}
+  - {fileID: 1222444645}
+  - {fileID: 1735451114}
   _FFDControls: []
   ControlsVisiblity: 1
   BonesVisiblity: 1
@@ -5928,7 +5928,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -651, y: -207}
+  m_AnchoredPosition: {x: -656, y: -197}
   m_SizeDelta: {x: 220, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1055987357
@@ -5951,8 +5951,8 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -5962,12 +5962,10 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
-  m_Text: 'Sometimes, the yard leads Round to Australia, and then the branches of
-    eucalyptus trees will extend over the yard. And he will reach out his arm, to
-    greet a koala.
-
-'
+    m_LineSpacing: 1
+  m_Text: "Sometimes, the yard leads Round to Australia, and then the branches of
+    eucalyptus trees will extend over the yard. \n\nAnd he will reach out his arm,
+    to greet a koala.\n"
 --- !u!222 &1055987358
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6397,6 +6395,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1142444677}
   - 114: {fileID: 1142444676}
+  - 82: {fileID: 1142444678}
   m_Layer: 0
   m_Name: PageManager
   m_TagString: Untagged
@@ -6423,6 +6422,7 @@ MonoBehaviour:
   - {fileID: 1997331702}
   hintPage: {fileID: 2093838112}
   puzzle: {fileID: 1783910907}
+  door: {fileID: 1142444678}
 --- !u!4 &1142444677
 Transform:
   m_ObjectHideFlags: 0
@@ -6436,6 +6436,80 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
+--- !u!82 &1142444678
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1142444675}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 01f75daa3d3224f129cfb4ceb432fa39, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1148260906
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,7 +6838,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1169490690
 Transform:
   m_ObjectHideFlags: 0
@@ -7903,7 +7977,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -7914,7 +7988,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: He knows that after the winter there will be the spring.
 --- !u!222 &1393002562
 CanvasRenderer:
@@ -8520,7 +8594,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1523662646
 Transform:
   m_ObjectHideFlags: 0
@@ -9232,7 +9306,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -230, y: 24}
+  m_AnchoredPosition: {x: -265, y: 4}
   m_SizeDelta: {x: 460, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570933509
@@ -9255,18 +9329,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: Once, the yard arrived at the Antarctica, and that time Round was out of
     his wits. He could only tightly close the door, and waited.
 --- !u!222 &1570933510
@@ -9307,7 +9381,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 269, y: 84}
+  m_AnchoredPosition: {x: 260, y: 74}
   m_SizeDelta: {x: 420, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576592747
@@ -9330,18 +9404,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 1
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: "Sometimes, the yard arrives at the Sahara desert. Round will hurry to put
     a white curtain over the yard to shield it from the sun. \nHe will take a can
     from his house and water the plants again and again.\n"
@@ -10273,7 +10347,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -169, y: -152}
+  m_AnchoredPosition: {x: -179, y: -172}
   m_SizeDelta: {x: 300, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731125048
@@ -10296,18 +10370,18 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
-    m_FontSize: 20
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
+    m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: "Round Eggy has a small yard. In Round\u2019s yard there is a fig tree.
     Centered at this tree, the yard is like a little planet, slowly rotating by itself.
     Everytime goes out of the yard\u2019s front door, Round will end up somewhere
@@ -10347,7 +10421,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 75139003}
-  m_RootOrder: 3
+  m_RootOrder: 5
 --- !u!114 &1735451113
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11127,7 +11201,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -11138,7 +11212,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: "And having a yard, for him, is having the entire world. \n"
 --- !u!222 &1902998192
 CanvasRenderer:
@@ -11436,6 +11510,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1997331703}
   - 95: {fileID: 1997331704}
+  - 82: {fileID: 1997331705}
   m_Layer: 0
   m_Name: page4
   m_TagString: Untagged
@@ -11485,6 +11560,80 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!82 &1997331705
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1997331702}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 218915a5132214b88a3530f242f6763c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &2002429351
 GameObject:
   m_ObjectHideFlags: 0
@@ -11903,7 +12052,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 35efb97e040a8475bba8c477eda73d0f, type: 3}
+    m_Font: {fileID: 12800000, guid: 0c5c0ab2021b84dec9b342787f79c7f8, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -11914,7 +12063,7 @@ MonoBehaviour:
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
-    m_LineSpacing: 1.2
+    m_LineSpacing: 1
   m_Text: 'No matter extreme hot or cold, Round is never too anxious about the yard.
 
 '

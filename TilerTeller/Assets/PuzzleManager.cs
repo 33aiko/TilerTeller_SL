@@ -20,12 +20,7 @@ public class PuzzleManager : MonoBehaviour {
 		arduino.Setup (ConfigurePins);
 		arduino2.Setup (ConfigurePinsTwo);
 		puzzleSovled = 0;
-
-		for (int i = 0; i < 4; i++) {
-			pinValue [i] = 1000;
-			pinValue2 [i] = 1000;
-		}
-
+	
 	}
 
 	void ConfigurePinsTwo(){
