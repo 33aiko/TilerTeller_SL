@@ -7669,9 +7669,9 @@ MonoBehaviour:
   - {fileID: 1690225278}
   - {fileID: 598404268}
   - {fileID: 747941981}
-  - {fileID: 892298596}
-  - {fileID: 1222444645}
   - {fileID: 1735451114}
+  - {fileID: 1222444645}
+  - {fileID: 892298596}
   _FFDControls: []
   ControlsVisiblity: 1
   BonesVisiblity: 1
