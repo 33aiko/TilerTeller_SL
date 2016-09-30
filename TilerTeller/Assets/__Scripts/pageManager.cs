@@ -27,6 +27,7 @@ public class pageManager : MonoBehaviour {
 
 	private bool startAnim;
 
+	private AudioSource[] hintSound;
 
 
 	void Start () {
@@ -46,6 +47,7 @@ public class pageManager : MonoBehaviour {
 
 		startAnim = false;
 
+		hintSound = hintPage.GetComponents<AudioSource> ();
 
 	}
 
@@ -73,8 +75,8 @@ public class pageManager : MonoBehaviour {
 				Debug.Log ("Open");
 				startAnim = true;	
 				hintDoor.SetTrigger ("Open");
-				if (!hintPage.GetComponent<AudioSource> ().isPlaying) {
-					hintPage.GetComponent<AudioSource> ().Play ();
+				if (!hintSound[0].isPlaying) {
+					hintSound[0].Play ();
 				}
 			}
 
@@ -161,6 +163,7 @@ public class pageManager : MonoBehaviour {
 	void showHintPage(){
 		if (hintPage != null) {
 			hintPage.SetActive (true);
+			hintSound [1].Play ();
 			Debug.Log ("next page");
 			isWaiting = true;
 		}
