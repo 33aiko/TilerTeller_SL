@@ -16,13 +16,23 @@ public class ArduinoManager : MonoBehaviour {
 	[Tooltip("The baudrate of the serial port")]
 	public int baudrate = 9600;
 
+
+
 	private SerialPort stream ;
 	[SerializeField]private int  puzzleSolved;
 
+	public bool isConnected;
+
 	void Start () {
 		stream = new SerialPort (port, baudrate);
-		stream.Open ();
-		stream.ReadTimeout = 50;
+		if (stream != null) {
+			stream.Open ();
+			stream.ReadTimeout = 50;
+			isConnected = true;
+		} else {
+			isConnected = false;
+		}
+
 
 	}
 	

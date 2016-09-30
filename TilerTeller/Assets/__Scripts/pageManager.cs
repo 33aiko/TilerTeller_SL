@@ -55,8 +55,9 @@ public class pageManager : MonoBehaviour {
 		lastBtn.SetActive (true);
 		nextBtn.SetActive (true);
 
-
-		puzzleNum = arduino.getPuzzleNum ();
+		if (arduino.isConnected) {
+			puzzleNum = arduino.getPuzzleNum ();
+		}
 //		Debug.Log ("puzzleNum:" + puzzleNum);
 
 
