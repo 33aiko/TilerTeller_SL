@@ -55,25 +55,31 @@ public class pageManager : MonoBehaviour {
 		lastBtn.SetActive (true);
 		nextBtn.SetActive (true);
 
-		if (!isWaiting) {
-			puzzleNum = arduino.getPuzzleNum ();
-		}
+
+		puzzleNum = arduino.getPuzzleNum ();
+//		Debug.Log ("puzzleNum:" + puzzleNum);
+
 
 		/* waiting for players to solve puzzles */
 		if (isWaiting) {
 			/* Disabled buttons */
 			nextBtn.SetActive (false);
-			Debug.Log (puzzleNum);
 
-			if (puzzleNum != lastPuzzleNum) {
+//			Debug.Log (startAnim);
+
+
+			if (puzzleNum != lastPuzzleNum && puzzleNum != 0) {
+				Debug.Log ("Open");
 				startAnim = true;	
 				hintDoor.SetTrigger ("Open");
+				if (!hintPage.GetComponent<AudioSource> ().isPlaying) {
+					hintPage.GetComponent<AudioSource> ().Play ();
+				}
 			}
 
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
 				startAnim = true;
 				puzzleNum = 1;
-				Debug.Log("heihei");
 			} 
 
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
@@ -86,9 +92,12 @@ public class pageManager : MonoBehaviour {
 			}
 
 			if (startAnim) {
+				
 				if (hintDoor.GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
-					gotoPage (puzzleNum);
+					Debug.Log ("Hello!");
 					startAnim = false;
+					gotoPage (puzzleNum);
+					hintDoor.SetTrigger ("Close");
 				}
 			}
 

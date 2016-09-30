@@ -49,7 +49,7 @@ public class ArduinoManager : MonoBehaviour {
 					}
 					else puzzleSolved = 0;
 
-					Debug.Log(puzzleSolved);
+//					Debug.Log(puzzleSolved);
 				},
 				null,
 				10f
