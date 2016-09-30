@@ -2,94 +2,101 @@
 using System.Collections;
 using UnityEngine.UI;
 
+
 public class pageManager : MonoBehaviour {
 
 
 	public GameObject[] pages;
 	public GameObject hintPage;
-	public PuzzleManager puzzle;
-	public AudioSource door;
+	public ArduinoManager arduino;
+	public Animator hintDoor;
 
-	private int pageNum;
-	private int pageCount;
-	private int currentPage;
-	private bool isWaiting;
 
-	private int[] pageRead;
+	private int bookLength;  //total number of pages
+	private int pageCount;  //How many pages have been read
+	private int currentPage;  //Current Page Number
+	private bool isWaiting; //State: waiting for solving puzzle
+
+	private int[] pageRead; //store the Page Numbers that has been read
 
 	private GameObject lastBtn;
 	private GameObject nextBtn;
 
-	private int puzzleNum;
+	private int puzzleNum;  //Puzzle Number that has been solved
 	private int lastPuzzleNum;
+
+	private bool startAnim;
+
+
 
 	void Start () {
 
 		lastBtn = GameObject.Find("/Canvas/last");
 		nextBtn = GameObject.Find ("/Canvas/next");
 		
-		pageNum = pages.Length;
+		bookLength = pages.Length;
 		pageCount = 0;
 		currentPage = 0;
 		isWaiting = false;
 
-		pageRead = new int[pageNum];
+		pageRead = new int[bookLength];
 		pageRead [0] = 0;
 
 		puzzleNum = lastPuzzleNum = 0;
+
+		startAnim = false;
+
+
 	}
 
 
 	void Update () {
+
 		lastBtn.SetActive (true);
 		nextBtn.SetActive (true);
-		int puzzleNum = puzzle.getPuzzleNum ();
+
+		if (!isWaiting) {
+			puzzleNum = arduino.getPuzzleNum ();
+		}
+
+		/* waiting for players to solve puzzles */
 		if (isWaiting) {
+			/* Disabled buttons */
+			nextBtn.SetActive (false);
+			Debug.Log (puzzleNum);
+
 			if (puzzleNum != lastPuzzleNum) {
-				if (puzzleNum == 2) {
-					pageRead [pageCount] = 1;
-					currentPage = 1;
-					hideHintPage ();
-					isWaiting = false;
-					lastPuzzleNum = puzzleNum;
-//					door.Play ();
-				} else if (puzzleNum == 1) {
-					pageRead [pageCount] = 2;
-					currentPage = 2;
-					hideHintPage ();
-					isWaiting = false;
-					lastPuzzleNum = puzzleNum;
-//					door.Play ();
-				} 
+				startAnim = true;	
+				hintDoor.SetTrigger ("Open");
 			}
+
 			if (Input.GetKeyDown (KeyCode.Alpha1)) {
-				pageRead [pageCount] = 1;
-				currentPage = 1;
-				hideHintPage ();
-				isWaiting = false;
-				lastPuzzleNum = puzzleNum;
-				//					door.Play ();
+				startAnim = true;
+				puzzleNum = 1;
+				Debug.Log("heihei");
 			} 
 
 			if (Input.GetKeyDown (KeyCode.Alpha2)) {
-				pageRead [pageCount] = 2;
-				currentPage = 2;
-				hideHintPage ();
-				isWaiting = false;
-				lastPuzzleNum = puzzleNum;
-				//					door.Play ();
+				startAnim = true;
+				puzzleNum = 2;
 			} 
-			 if (Input.GetKeyDown (KeyCode.Alpha3)) {
-				pageRead [pageCount] = 3;
-				currentPage = 3;
-				hideHintPage ();
-				isWaiting = false;
-				lastPuzzleNum = puzzleNum;
-//				door.Play ();
+			if (Input.GetKeyDown (KeyCode.Alpha3)) {
+				startAnim = true;
+				puzzleNum = 3;
 			}
+
+			if (startAnim) {
+				if (hintDoor.GetCurrentAnimatorStateInfo (0).IsName ("Finished")) {
+					gotoPage (puzzleNum);
+					startAnim = false;
+				}
+			}
+
+
 		}
 
-		for (int i = 0; i < pageNum; i++) {
+		/* Display the current page */
+		for (int i = 0; i < bookLength; i++) {
 			if (i == currentPage && pages [i] != null && isWaiting != true) {
 				pages [i].SetActive (true);
 				if (pages [i].GetComponent<AudioSource> () != null && pages [i].GetComponent<AudioSource> ().isPlaying != true) {
@@ -101,18 +108,19 @@ public class pageManager : MonoBehaviour {
 		if (currentPage == 0) {
 			lastBtn.SetActive (false);
 		}
-		if (currentPage == pageNum - 1) {
+		if (currentPage == bookLength - 1) {
 			nextBtn.SetActive (false);
 		}
 
 	}
 
+	/* When NextPage button is clicked */
 	public void turnNextPage(){
 
-		if (pageCount == pageNum - 2) {
-			currentPage = pageNum - 1;
-			pageRead [pageNum - 1] = currentPage;
-			for (int j = 0; j < pageNum; j++) {
+		if (pageCount == bookLength - 2) {
+			currentPage = bookLength - 1;
+			pageRead [bookLength - 1] = currentPage;
+			for (int j = 0; j < bookLength; j++) {
 				Debug.Log (pageRead [j]);
 			}
 
@@ -135,6 +143,8 @@ public class pageManager : MonoBehaviour {
 		} else {
 			pageCount--;
 			currentPage = pageRead [pageCount];
+			hideHintPage ();
+			isWaiting = false;
 		}
 	}
 
@@ -151,5 +161,13 @@ public class pageManager : MonoBehaviour {
 		hintPage.SetActive (false);
 	}
 
+	/* Go to certain page */
+	void gotoPage(int page){
+			pageRead [pageCount] = page;
+			currentPage = page;
+			hideHintPage ();
+			isWaiting = false;
+			lastPuzzleNum = puzzleNum;
+	}
 
 }

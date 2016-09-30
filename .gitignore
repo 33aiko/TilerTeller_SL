@@ -6,6 +6,8 @@
 */[Tt]emp/
 */[Oo]bj/
 [Bb]uild/
+[Bb]uilds/
+
 
 #Unity3D Generated File On Crash Reports
 sysinfo.txt
@@ -40,3 +42,9 @@ node_modules/
 
 *.sublime-workspace
 *.sublime-project
+
+TilerTeller/TilerTeller.app/Contents/Data/Managed/etc/mono/1.0/DefaultWsdlHelpGenerator.aspx
+
+*.aspx
+
+*.aspx
