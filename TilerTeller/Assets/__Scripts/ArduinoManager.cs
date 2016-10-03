@@ -49,17 +49,17 @@ public class ArduinoManager : MonoBehaviour {
 						valueNum[i] = int.Parse(values[i]);
 					}
 					if(valueNum[0]<3 && valueNum[1]<3 && valueNum[2]<3 && valueNum[3]<3){
-						puzzleSolved = 1;
+						puzzleSolved = 3;
 					}
 					else if(valueNum[4]<3 && valueNum[5]<3 && valueNum[6]<3 && valueNum[7]<3){
 						puzzleSolved = 2;
 					}
 					else if(valueNum[8]<3 && valueNum[9]<3 && valueNum[10]<3 && valueNum[11]<3){
-						puzzleSolved = 3;
+						puzzleSolved = 1;
 					}
 					else puzzleSolved = 0;
 
-//					Debug.Log(puzzleSolved);
+					Debug.Log(puzzleSolved);
 				},
 				null,
 				10f
