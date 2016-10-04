@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 0c5c0ab2021b84dec9b342787f79c7f8
-timeCreated: 1474656022
+guid: 9306f211bb7294a51b6803837fb7a876
+timeCreated: 1475559446
 licenseType: Free
 TrueTypeFontImporter:
   serializedVersion: 4
@@ -10,8 +10,9 @@ TrueTypeFontImporter:
   characterPadding: 1
   includeFontData: 1
   fontNames:
-  - Consolas
-  fallbackFontReferences: []
+  - Crimson Text
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 6ef2af6fc40a1442eb5f239664ae460d, type: 3}
   customCharacters: 
   fontRenderingMode: 0
   ascentCalculationMode: 1

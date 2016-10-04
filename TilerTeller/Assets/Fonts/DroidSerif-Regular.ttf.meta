@@ -1,15 +1,16 @@
 fileFormatVersion: 2
-guid: 35efb97e040a8475bba8c477eda73d0f
-timeCreated: 1474012563
+guid: bcf6741eef01b433f873f119d01899ff
+timeCreated: 1475558756
 licenseType: Free
 TrueTypeFontImporter:
-  serializedVersion: 3
+  serializedVersion: 4
   fontSize: 16
   forceTextureCase: -2
-  characterSpacing: 1
-  characterPadding: 0
+  characterSpacing: 0
+  characterPadding: 1
   includeFontData: 1
-  fontNames: []
+  fontNames:
+  - Droid Serif
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
