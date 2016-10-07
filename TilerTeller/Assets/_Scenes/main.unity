@@ -1200,8 +1200,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 189303668}
-  m_LocalRotation: {x: 0.000000035735955, y: -0.000000022344976, z: -0.024764951,
-    w: -0.99969333}
+  m_LocalRotation: {x: 0.000000035735948, y: -0.000000022344993, z: -0.024765428,
+    w: -0.9996933}
   m_LocalPosition: {x: 0.00000029052867, y: 1, z: 1.16097665e-14}
   m_LocalScale: {x: 0.75964755, y: 0.7596475, z: 0.75964755}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3487,7 +3487,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 508010923}
-  m_LocalRotation: {x: -0.00000006016683, y: 0.000000032353768, z: 0.74317944, w: -0.66909224}
+  m_LocalRotation: {x: -0.000000060166826, y: 0.000000032353796, z: 0.74317974, w: -0.6690919}
   m_LocalPosition: {x: 0.00000026971844, y: 1.000001, z: 0}
   m_LocalScale: {x: 1.5954015, y: 1.5954016, z: 1.5954018}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6167,9 +6167,9 @@ MonoBehaviour:
   - {fileID: 1690225278}
   - {fileID: 598404268}
   - {fileID: 747941981}
-  - {fileID: 892298596}
-  - {fileID: 1222444645}
   - {fileID: 1735451114}
+  - {fileID: 1222444645}
+  - {fileID: 892298596}
   _FFDControls: []
   ControlsVisiblity: 1
   BonesVisiblity: 1
@@ -6514,7 +6514,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1046621348}
-  m_LocalRotation: {x: -0.00000004214685, y: -0.00000002107342, z: -0.6982148, w: 0.7158884}
+  m_LocalRotation: {x: -0.000000042146844, y: -0.000000021073431, z: -0.6982148, w: 0.7158883}
   m_LocalPosition: {x: 0.000000016998891, y: 1.0000001, z: 0}
   m_LocalScale: {x: 1.6593105, y: 1.6593106, z: 1.6593108}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6622,8 +6622,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
   m_Text: "Sometimes, the yard leads Round to Australia, and then the branches of
-    eucalyptus trees will extend over the yard. \n\nAnd he will reach out his arm,
-    to greet a koala.\n"
+    eucalyptus trees will extend over the yard.\n \nHe will reach out his arm to greet
+    a koala.\n"
 --- !u!222 &1055987358
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10109,8 +10109,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: Once, the yard arrived at the Antarctica, and that time Round was out of
-    his wits. He could only tightly close the door, and waited.
+  m_Text: Sometimes, the yard arrives at the Antarctica, and Round will be out of
+    his wits. He can only tightly close the door and wait.
 --- !u!222 &1570933510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10149,7 +10149,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 293, y: 106}
+  m_AnchoredPosition: {x: 281, y: 99}
   m_SizeDelta: {x: 367, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1576592747
@@ -10184,9 +10184,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "Sometimes, the yard arrives at the Sahara desert. Round will hurry to put
-    a white curtain over the yard to shield it from the sun. \n\nHe will take a tin
-    can from his house and water the plants again and again.\n"
+  m_Text: "Sometimes, the yard arrives at the Sahara desert. Round will quickly put
+    a curtain over the yard to shield it from the sun. \n\nHe will take a tin can
+    from his house and water the withered plants again and again.\n"
 --- !u!222 &1576592748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11212,9 +11212,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: "Round Eggy has a small yard. \nIn the yard there is a fig tree. \n\nCentered
-    at this tree, the yard is like a little planet, slowly rotating by itself.\n\nEverytime
-    goes out of the yard\u2019s front door, Round will end up somewhere strange. "
+  m_Text: "Round Eggy has a small yard. \nIn the yard there is a fig tree. \nCentered
+    at this tree, the yard is like a little planet, slowly rotating by itself.\n\nEvery
+    time he goes out of the yard\u2019s front door, Round will end up somewhere strange
+    on the other planet - the earth. "
 --- !u!222 &1731125049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13148,7 +13149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.8
-  m_Text: 'No matter extreme hot or cold, Round is never too anxious about his yard.
+  m_Text: 'But no matter how hot or cold, Round never gets too anxious about his yard.
 
 '
 --- !u!222 &2077625268
