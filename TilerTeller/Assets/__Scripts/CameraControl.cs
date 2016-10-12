@@ -58,13 +58,14 @@ public class CameraControl : MonoBehaviour {
 			}
 
 
-
+			nextIcon.DOFade (0, 0);
 
 			int textIndex = (int)value - 1;
 			if (textIndex < textList.Length) {
 				text.text = textList [textIndex];
 				text.DOFade (0, 0);
 				text.DOFade (1, 1.5f);
+				nextIcon.DOFade (1, 0.5f).SetDelay(2);
 			}
 
 
@@ -77,6 +78,7 @@ public class CameraControl : MonoBehaviour {
 	private float defaultFOV;
 	private Vector3 defaultPos;
 	private GameObject continueBtn;
+	private Image nextIcon;
 
 
 	[SerializeField] GameObject[] squares;
@@ -92,6 +94,8 @@ public class CameraControl : MonoBehaviour {
 		defaultPos = transform.position;
 		continueBtn = GameObject.Find ("continue");
 		continueBtn.SetActive(false);
+		nextIcon = GameObject.Find ("next").GetComponent<Image>();
+		nextIcon.DOFade (0, 0);
 	}
 
 	void Start(){
@@ -103,6 +107,7 @@ public class CameraControl : MonoBehaviour {
 		foreach (GameObject dialogue in dialogues) {
 			dialogue.GetComponent<RectTransform> ().DOScale (1, 0.5f).SetDelay(1f);
 		}
+		nextIcon.DOFade (1, 0.5f).SetDelay(2);
 	}
 
 	void Update()
