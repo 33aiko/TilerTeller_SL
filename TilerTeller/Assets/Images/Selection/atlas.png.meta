@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a5a8b9d1616ae4eb3b902570407582a2
-timeCreated: 1475743021
+timeCreated: 1476298440
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,10 +10,11 @@ TextureImporter:
     21300006: atlas_3
     21300008: bottom
     21300010: book2
+    21300012: atlas_0
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -62,8 +63,8 @@ TextureImporter:
       name: title
       rect:
         serializedVersion: 2
-        x: 305
-        y: 1124
+        x: 460
+        y: 1111
         width: 922
         height: 207
       alignment: 0
@@ -131,6 +132,19 @@ TextureImporter:
         y: 218
         width: 668
         height: 876
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: atlas_0
+      rect:
+        serializedVersion: 2
+        x: 1567
+        y: 873
+        width: 44
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

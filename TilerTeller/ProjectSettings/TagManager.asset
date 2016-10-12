@@ -7,7 +7,7 @@ TagManager:
   - main
   - page
   - interactive
-  - foreground
+  - UI
   - background
   layers:
   - Default
@@ -21,7 +21,7 @@ TagManager:
   - NavMesh
   - BackgroundImage
   - player
-  - 
+  - Squares
   - 
   - 
   - 

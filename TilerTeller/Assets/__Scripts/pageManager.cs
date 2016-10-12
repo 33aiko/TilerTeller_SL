@@ -49,6 +49,8 @@ public class pageManager : MonoBehaviour {
 
 		hintSound = hintPage.GetComponents<AudioSource> ();
 
+
+
 	}
 
 

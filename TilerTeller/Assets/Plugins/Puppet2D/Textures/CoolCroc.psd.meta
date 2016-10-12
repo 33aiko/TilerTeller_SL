@@ -1,7 +1,14 @@
 fileFormatVersion: 2
 guid: a875fb591e1c447b191bf8cee15d60f4
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: CoolCrocArmL
+    21300002: CoolCrocArmR
+    21300004: CoolCrocTail
+    21300006: CoolCrocLegR
+    21300008: CoolCrocBody
+    21300010: CoolCrocLegL
+    21300012: CoolCrocCoatEnd
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -44,11 +51,14 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 10
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: CoolCrocArmL
+    - serializedVersion: 2
+      name: CoolCrocArmL
       rect:
         serializedVersion: 2
         x: 66
@@ -59,7 +69,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: CoolCrocArmR
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CoolCrocArmR
       rect:
         serializedVersion: 2
         x: 276
@@ -70,7 +82,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: CoolCrocTail
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CoolCrocTail
       rect:
         serializedVersion: 2
         x: 631
@@ -81,7 +95,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: CoolCrocLegR
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CoolCrocLegR
       rect:
         serializedVersion: 2
         x: 65
@@ -92,7 +108,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: CoolCrocBody
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CoolCrocBody
       rect:
         serializedVersion: 2
         x: 485
@@ -103,7 +121,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: CoolCrocLegL
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CoolCrocLegL
       rect:
         serializedVersion: 2
         x: 42
@@ -114,7 +134,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: CoolCrocCoatEnd
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: CoolCrocCoatEnd
       rect:
         serializedVersion: 2
         x: 300
@@ -125,6 +147,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
