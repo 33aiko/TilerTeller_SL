@@ -1,7 +1,12 @@
 fileFormatVersion: 2
 guid: aa7bc49b0b77d1f4f9dbcf3cb8f4e445
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: MonsterAxe
+    21300002: MonsterArmR
+    21300004: MonsterArmL
+    21300006: MonsterBody
+    21300008: MonsterSash
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -44,11 +49,14 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 10
   alphaIsTransparency: 1
+  spriteTessellationDetail: -1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
+    serializedVersion: 2
     sprites:
-    - name: MonsterAxe
+    - serializedVersion: 2
+      name: MonsterAxe
       rect:
         serializedVersion: 2
         x: 5
@@ -59,7 +67,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: MonsterArmR
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MonsterArmR
       rect:
         serializedVersion: 2
         x: 11
@@ -70,7 +80,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: MonsterArmL
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MonsterArmL
       rect:
         serializedVersion: 2
         x: 535
@@ -81,7 +93,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: MonsterBody
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MonsterBody
       rect:
         serializedVersion: 2
         x: 692
@@ -92,7 +106,9 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-    - name: MonsterSash
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: MonsterSash
       rect:
         serializedVersion: 2
         x: 802
@@ -103,6 +119,7 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
+      tessellationDetail: -1
     outline: []
   spritePackingTag: 
   userData: 
