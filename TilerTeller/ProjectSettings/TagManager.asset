@@ -9,6 +9,7 @@ TagManager:
   - interactive
   - UI
   - background
+  - firefly
   layers:
   - Default
   - TransparentFX
