@@ -21,19 +21,21 @@ public class ArduinoManager : MonoBehaviour {
 	private SerialPort stream ;
 	[SerializeField]private int  puzzleSolved;
 
+	int[] buttonCounter = {0,0,0,0};
+	int[] buttonState = {0,0,0,0};
+	int[] lastButtonState = {0,0,0,0};
+
 	public bool isConnected;
 
 	void Start () {
 		stream = new SerialPort (port, baudrate);
 		if (stream != null) {
 			stream.Open ();
-			stream.ReadTimeout = 50;
+			stream.ReadTimeout = 25;
 			isConnected = true;
 		} else {
 			isConnected = false;
 		}
-
-
 
 	}
 	
@@ -45,7 +47,26 @@ public class ArduinoManager : MonoBehaviour {
 		StartCoroutine (
 			AsynchronousReadFromArduino(
 				(string s) => { 
-//					string[] values = s.Split(new[]{','},StringSplitOptions.RemoveEmptyEntries);
+					string[] values = s.Split(new[]{','},StringSplitOptions.RemoveEmptyEntries);
+
+					if(values[0]=="S2"){
+						
+
+
+						for(int i=0; i<4; i++){
+							buttonState[i] = int.Parse(values[i+1]);
+							    if(buttonState[i] != lastButtonState[i]){
+							      if(buttonState[i] == 1){
+							        buttonCounter[i] ++;
+							      }
+							    }
+							  lastButtonState[i] = buttonState[i];
+						}
+
+						Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
+
+					}
+
 //					int[] valueNum = new int[12];
 //					for(int i=0; i<12; i++){
 ////						Debug.Log(i+": "+ int.Parse(values[i]));
@@ -62,10 +83,10 @@ public class ArduinoManager : MonoBehaviour {
 //					}
 //					else puzzleSolved = 0;
 
-					Debug.Log(s);
+
 				},
 				null,
-				10f
+				25f
 			));
 
 	}
