@@ -10,6 +10,6 @@ public class StartGame : MonoBehaviour {
 	}
 
 	public void continueGame(){
-		Application.LoadLevel (2);
+		Application.LoadLevel (4);
 	}
 }
