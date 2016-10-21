@@ -41,13 +41,19 @@ public class ArduinoManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-//		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-//			WriteToArduino ("led");
-//		}
+		if (Input.GetKeyDown (KeyCode.Alpha1)) {
+			WriteToArduino ("led");
+		}
 		StartCoroutine (
 			AsynchronousReadFromArduino(
 				(string s) => { 
 					string[] values = s.Split(new[]{','},StringSplitOptions.RemoveEmptyEntries);
+<<<<<<< HEAD
+=======
+
+					if(values[0]=="S2"){
+						
+>>>>>>> parent of 24ffe46... Codes Added
 
 
 					if(values[0]=="S2"){
@@ -63,27 +69,21 @@ public class ArduinoManager : MonoBehaviour {
 					}
 				
 
-					if(values[0] == "S1"){
-
-					int[] valueNum = new int[12];
-					for(int i=0; i<12; i++){
-//						Debug.Log(i+": "+ int.Parse(values[i+1]));
-						valueNum[i] = int.Parse(values[i+1]);
-					}
-					if(valueNum[0]<3 && valueNum[1]<3 && valueNum[2]<3 && valueNum[3]<3){
-						puzzleSolved = 3;
-					}
-					else if(valueNum[4]<3 && valueNum[5]<3 && valueNum[6]<3 && valueNum[7]<3){
-						puzzleSolved = 2;
-					}
-					else if(valueNum[8]<3 && valueNum[9]<3 && valueNum[10]<3 && valueNum[11]<3){
-						puzzleSolved = 1;
-					}
-						else puzzleSolved = 0;
-
-					}
-
-
+//					int[] valueNum = new int[12];
+//					for(int i=0; i<12; i++){
+////						Debug.Log(i+": "+ int.Parse(values[i]));
+//						valueNum[i] = int.Parse(values[i]);
+//					}
+//					if(valueNum[0]<3 && valueNum[1]<3 && valueNum[2]<3 && valueNum[3]<3){
+//						puzzleSolved = 3;
+//					}
+//					else if(valueNum[4]<3 && valueNum[5]<3 && valueNum[6]<3 && valueNum[7]<3){
+//						puzzleSolved = 2;
+//					}
+//					else if(valueNum[8]<3 && valueNum[9]<3 && valueNum[10]<3 && valueNum[11]<3){
+//						puzzleSolved = 1;
+//					}
+//					else puzzleSolved = 0;
 
 
 				},

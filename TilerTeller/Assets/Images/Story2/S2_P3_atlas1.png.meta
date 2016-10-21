@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5d71918abbd234815a6a3e1326744b94
-timeCreated: 1476757998
+timeCreated: 1476405944
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,10 +16,6 @@ TextureImporter:
     21300018: S2_P3_eggy
     21300020: S2_P3_star2b
     21300022: S2_P3_lifting
-    21300024: S2_P3_star4b
-    21300026: S2_P3_star4
-    21300028: S2_P3_star1
-    21300030: S2_P3_star2b
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -77,7 +73,7 @@ TextureImporter:
         width: 577
         height: 577
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -103,7 +99,7 @@ TextureImporter:
         width: 207
         height: 207
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -116,7 +112,7 @@ TextureImporter:
         width: 207
         height: 207
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -129,7 +125,7 @@ TextureImporter:
         width: 110
         height: 106
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -142,7 +138,7 @@ TextureImporter:
         width: 117
         height: 133
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -176,23 +172,23 @@ TextureImporter:
       name: S2_P3_star2
       rect:
         serializedVersion: 2
-        x: 1319
+        x: 1691
         y: 730
         width: 349
         height: 350
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: S2_P3_lifting
+      name: S2_P3_eggy
       rect:
         serializedVersion: 2
-        x: 1616
-        y: 22
-        width: 544
-        height: 710
+        x: 1054
+        y: 177
+        width: 533
+        height: 499
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,13 +208,13 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: S2_P3_eggy
+      name: S2_P3_lifting
       rect:
         serializedVersion: 2
-        x: 1054
-        y: 177
-        width: 533
-        height: 499
+        x: 1600
+        y: 3
+        width: 572
+        height: 726
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
