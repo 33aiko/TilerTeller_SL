@@ -60,6 +60,7 @@ public class StarLighter : MonoBehaviour {
 
 	}
 
+	public ArduinoManager arduino;
 	public GameObject[] stars;
 	private  int[] buttonCounter = { 0, 0, 0, 0 };
 	private Star[] mystars = new Star[4];
@@ -91,24 +92,31 @@ public class StarLighter : MonoBehaviour {
 	
 
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Alpha1)) {
+		if (Input.GetKeyDown (KeyCode.Alpha5)) {
 			buttonCounter [0]++;
 		}
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
+		if (Input.GetKeyDown (KeyCode.Alpha6)) {
 			buttonCounter [1]++;
 		}
-		if (Input.GetKeyDown (KeyCode.Alpha3)) {
+		if (Input.GetKeyDown (KeyCode.Alpha7)) {
 			buttonCounter [2]++;
 		}
-		if (Input.GetKeyDown (KeyCode.Alpha4)) {
+		if (Input.GetKeyDown (KeyCode.Alpha8)) {
 			buttonCounter [3]++;
 		}
+
+		if (arduino != null && arduino.isConnected == true) {
+			buttonCounter = arduino.getButtonCounter ();
+		}
+
+
+
 
 		for (int i = 0; i < 4; i++) {
 			if (mystars [i] != null) {
 				mystars [i].lightStar (buttonCounter [i]);
 			}
 		}
-//		Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
+		Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
 	}
 }

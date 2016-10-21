@@ -48,12 +48,9 @@ public class ArduinoManager : MonoBehaviour {
 			AsynchronousReadFromArduino(
 				(string s) => { 
 					string[] values = s.Split(new[]{','},StringSplitOptions.RemoveEmptyEntries);
-//					Debug.Log(values.Length);
+
 
 					if(values[0]=="S2"){
-						
-
-
 						for(int i=0; i<4; i++){
 							buttonState[i] = int.Parse(values[i+1]);
 							    if(buttonState[i] != lastButtonState[i]){
@@ -61,12 +58,10 @@ public class ArduinoManager : MonoBehaviour {
 							        buttonCounter[i] ++;
 							      }
 							    }
-							  lastButtonState[i] = buttonState[i];
-						}
-
-						Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
-
+							lastButtonState[i] = buttonState[i];}
+//						Debug.Log(buttonCounter[0]+","+buttonCounter[1]+","+buttonCounter[2]+","+buttonCounter[3]);
 					}
+				
 
 					if(values[0] == "S1"){
 
@@ -148,6 +143,10 @@ public class ArduinoManager : MonoBehaviour {
 
 	public void setPuzzleNum(int puzzleNum){
 		puzzleSolved = puzzleNum;
+	}
+
+	public int[] getButtonCounter(){
+		return buttonCounter;
 	}
 
 }

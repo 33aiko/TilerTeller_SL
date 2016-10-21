@@ -1015,11 +1015,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adc1dc17c0ade45a2a6da0f1c0d34102, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arduino: {fileID: 743899476}
   stars:
   - {fileID: 317195239}
   - {fileID: 44120275}
   - {fileID: 565175273}
   - {fileID: 1118616483}
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+--- !u!114 &743899476 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114000012211382460, guid: 91a2f88a1fefa4131aa1c359eb065478,
+    type: 2}
+  m_PrefabInternal: {fileID: 1530613229}
+  m_Script: {fileID: 11500000, guid: ee5ead90b2f85464798d979b78ec4d2f, type: 3}
+--- !u!1 &889021662
+=======
+>>>>>>> Stashed changes
 --- !u!95 &579547580
 Animator:
   serializedVersion: 3
@@ -1110,6 +1123,7 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 687109377}
 --- !u!1 &699725127
+<<<<<<< Updated upstream
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1256,12 +1270,164 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 795308747}
 --- !u!1 &930392373
+=======
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
+<<<<<<< Updated upstream
+=======
+  - 224: {fileID: 699725128}
+  - 222: {fileID: 699725130}
+  - 114: {fileID: 699725129}
+  m_Layer: 5
+  m_Name: Text (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &699725128
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699725127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 514597743}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -670, y: -483}
+  m_SizeDelta: {x: 370, y: 250}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &699725129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699725127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 9306f211bb7294a51b6803837fb7a876, type: 3}
+    m_FontSize: 21
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 0.8
+  m_Text: 'Larger stars need more fireflies than smaller stars, so make sure to count
+    them right!
+
+    The numbers wrote on the fireflies are the numbers of fireflies required to light
+    stars with different sizes. Press the fireflies on tiles to release the correct
+    numbers of them into the sky. '
+--- !u!222 &699725130
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699725127}
+--- !u!1001 &795308747
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1118616485}
+    m_Modifications:
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.9733334
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0.56940156
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.82205963
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010431382492, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_Name
+      value: S2_P3_fireflyb (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.24456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 69.417
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &795308748 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 795308747}
+--- !u!1 &930392373
+>>>>>>> origin/master
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+>>>>>>> Stashed changes
   - 4: {fileID: 930392374}
   - 212: {fileID: 930392375}
   m_Layer: 0
@@ -1469,6 +1635,25 @@ Halo:
 --- !u!95 &1014967125
 Animator:
   serializedVersion: 3
+<<<<<<< Updated upstream
+=======
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1014967121}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2b73b7da0657943049495ed89ad24aff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!1 &1118616483
+GameObject:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -2003,7 +2188,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011651616896, guid: 91a2f88a1fefa4131aa1c359eb065478, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91a2f88a1fefa4131aa1c359eb065478, type: 2}
@@ -2293,6 +2478,7 @@ Prefab:
   m_ParentPrefab: {fileID: 100100000, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &1666335681 stripped
+<<<<<<< Updated upstream
 Transform:
   m_PrefabParentObject: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca,
     type: 2}
@@ -2347,10 +2533,69 @@ MonoBehaviour:
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
 --- !u!4 &1667881190
+=======
+>>>>>>> Stashed changes
+Transform:
+  m_PrefabParentObject: {fileID: 4000010370360454, guid: 1e8d69e1e972c4ccb8846d5a4d55a0ca,
+    type: 2}
+  m_PrefabInternal: {fileID: 1666335680}
+--- !u!1 &1667881187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1667881190}
+  - 114: {fileID: 1667881189}
+  - 114: {fileID: 1667881188}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1667881188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667881187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1667881189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1667881187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 5
+--- !u!4 &1667881190
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+>>>>>>> Stashed changes
   m_GameObject: {fileID: 1667881187}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
